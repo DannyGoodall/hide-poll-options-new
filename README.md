@@ -1,0 +1,1 @@
+hide-poll-options-new
