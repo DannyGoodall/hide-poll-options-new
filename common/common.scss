@@ -1,3 +1,41 @@
 div.poll div.poll-container ul.results > li:not(.chosen) {
     display: none;
 }
+
+  
+div.poll[data-poll-name^="horiz"] li[data-poll-option-id] {
+    // color: #222;
+    padding: 0.5em 0.7em 0.7em 0.5em;
+    display: inline-block;
+    margin-left: 5px;
+}
+
+.cast-votes.btn-primary {
+  -webkit-animation: flash-button 1s infinite;  /* Safari 4+ */
+  -moz-animation: flash-button 1s infinite;  /* Fx 5+ */
+  -o-animation: flash-button 1s infinite;  /* Opera 12+ */
+  animation: flash-button 1s infinite;  /* IE 10+, Fx 29+ */
+}
+
+@-webkit-keyframes flash-button {
+  0%, 49% {
+    background-color: #f7f7f7;
+    /*border: 3px solid #e50000;*/
+  }
+  50%, 100% {
+    // background-color: #4291f4;
+    background-color: #26bcd7;
+    /*background-color: #e50000;
+    border: 3px solid rgb(117, 209, 63);*/
+  }
+}
+
+// Set the close poll button background color
+div.poll-buttons button[title="Close the poll"] {
+  background: #bd1550;
+}
+
+
+// li.remove-empty-vote {
+//     display: none;
+// }
