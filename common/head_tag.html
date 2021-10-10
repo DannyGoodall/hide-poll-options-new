@@ -1,0 +1,14 @@
+<script type="text/discourse-plugin" version="0.8">
+    api.onPageChange((url, title) = {
+        console.log('The page changes to: ' + url + ' and title ' + title);
+        // Let's look for non-disabled buttons of class .toggle-results that haven't been toggled already
+        const r = $( '.poll button.toggle-results:not([disabled]):not([toggled-once])' );
+
+        poll_results_buttons = $('.poll button.toggle-results').change(
+            function() {
+                alert("Handler for .change() called.");
+                
+            }
+        );
+    });
+</script>
